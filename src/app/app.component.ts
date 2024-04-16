@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +10,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'CRUDHorarios';
+
+	//Inyeccion de dependencias
+
+	constructor(private router: Router){}
+
+	listar(){
+		this.router.navigate(['listar']);
+	}
+
+	nuevo(){
+		this.router.navigate(['guardar']);
+	}
+
 }
