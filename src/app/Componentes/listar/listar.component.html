@@ -1,1 +1,38 @@
-<p>listar works!</p>
+<div class="container">
+	<div class="card">
+		<div class="card-header">
+			<h3>HORARIOS</h3>
+		</div>
+		<div class="card-body">
+			<table class="table table-hover" border="1">
+				<thead>
+					<tr class="text-center">
+						<th>ID</th>
+						<th>DIA</th>
+						<th>INICIO</th>
+						<th>FINAL</th>
+						<th>ACTIVIDAD</th>
+						<th>ACCIONES</th>
+					</tr>
+				</thead>
+				<tbody>
+					@for (horario of horarios; track horario.idHorario) {
+						<tr class="text-center">
+							<td>{{horario.idHorario}}</td>
+							<td>{{horario.diaSemana}}</td>
+							<td>{{horario.horaInicio}}</td>
+							<td>{{horario.horaFin}}</td>
+							<td>{{horario.actividad}}</td>
+							<td>
+								<button class="btn btn-outline-dark" (click)="editar(horario)">EDITAR</button>
+								<button class="btn btn-outline-dark" style="margin-left: 15px;" (click)="eliminar(horario)">ELIMINAR</button>
+							</td>
+						</tr>
+					} @empty {
+						<td style="text-align: center;" colspan="8">NO EXISTEN REGISTROS</td>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
