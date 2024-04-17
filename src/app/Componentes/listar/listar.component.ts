@@ -49,4 +49,10 @@ export class ListarComponent implements OnInit{
 		})
 		this.router.navigate(['eliminar']);
 	}
+
+	buscarPorDia(){
+		this.service.buscarPorDia(this.horario).subscribe(data => {
+			this.horarios = data;
+		})
+	}
 }

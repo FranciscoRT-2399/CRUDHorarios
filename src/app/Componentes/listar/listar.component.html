@@ -3,6 +3,16 @@
 		<div class="card-header">
 			<h3>HORARIOS</h3>
 		</div>
+		<div class="input-group">
+			<input 
+			type="text" 
+			class="form-control" 
+			placeholder="Ingrese el dia" 
+			aria-label="Buscar" 
+			aria-describedby="boton-buscar" 
+			[(ngModel)]="horario.diaSemana" 
+			(ngModelChange)="buscarPorDia()">
+		</div>
 		<div class="card-body">
 			<table class="table table-hover" border="1">
 				<thead>
