@@ -1,0 +1,56 @@
+.card{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.card-header{
+	background-color: #f0f0f0;
+	padding: 10px;
+	border-bottom: 1px solid #333;
+}
+
+.card-body{
+	padding: 20px;
+}
+
+.imput-group{
+	margin-bottom: 10px;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td{
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+.table th{
+	background-color: #f0f0f0;
+}
+
+.table td{
+	text-align: center;
+}
+
+.btn{
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 8px 16px;
+	border: 1px solid #333;
+	background-color: transparent;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: background-color 0.3s, color 0.3s;
+	margin-left: 10px;
+}
+
+.btn:hover{
+	background-color: #333;
+	color: #fff;
+}
