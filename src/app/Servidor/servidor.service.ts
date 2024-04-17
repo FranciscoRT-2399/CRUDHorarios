@@ -20,15 +20,15 @@ export class ServidorService {
 	}
 
 	guardarH(horario: Horarios){
-		return this.http.post<String>(this.url + "/guardar", horario);
+		return this.http.post<string>(this.url + "/guardar", horario);
 	}
 	
 	editarH(horario: Horarios){
-		return this.http.post<String>(this.url + "/editar", horario);
+		return this.http.post<string>(this.url + "/editar", horario);
 	}
 
 	eliminarH(horario: Horarios){
-		return this.http.post<String>(this.url + "/eliminar", horario);
+		return this.http.post<string>(this.url + "/eliminar", horario);
 	}
 
 	buscarPorDia(horario: Horarios){
