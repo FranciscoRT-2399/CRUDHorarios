@@ -4,5 +4,5 @@ export class Horarios{
 		diaSemana !: string;
 		horaInicio !: string;
 		horaFin !: string;
-		actividad !: String;
+		actividad !: string;
 }
