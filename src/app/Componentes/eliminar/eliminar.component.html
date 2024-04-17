@@ -1,1 +1,41 @@
-<p>eliminar works!</p>
+<div class="container">
+	<div class="card">
+		<div class="card-header text-center">
+			<h3>Eliminacion de actividades</h3>
+		</div>
+		<div class="card-body">
+			<form>
+				<div class="form-group">
+					<label for="id">ID</label>
+					<input type="number" name="id" class="form-control" [(ngModel)]="horario.idHorario" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="dia">DIA</label>
+					<input type="text" name="dia" class="form-control" [(ngModel)]="horario.diaSemana" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="horaIn">HORA INICIO</label>
+					<input type="text" name="horaIn" class="form-control" [(ngModel)]="horario.horaInicio" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="horaFin">HORA FINAL</label>
+					<input type="text" name="horaFin" class="form-control" [(ngModel)]="horario.horaFin" readonly>
+				</div>
+
+				<div class="form-group">
+					<label for="act">ACTIVIDAD</label>
+					<input type="text" name="act" class="form-control" [(ngModel)]="horario.actividad" readonly>
+				</div>
+
+				<br>
+
+				<button class="btn" (click)="eliminar()">ELIMINAR</button>
+				<button class="btn" style="margin-left: 15px;" (click)="cancelar()">CANCELAR</button>
+
+			</form>
+		</div>
+	</div>
+</div>
